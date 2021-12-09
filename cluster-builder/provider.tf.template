@@ -1,0 +1,8 @@
+provider "nutanix" {
+  username     = "Username"
+  password     = "Password"
+  endpoint     = "ip"
+  insecure     = true
+  port         = Port
+  wait_timeout = 10
+}
