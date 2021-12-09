@@ -6,19 +6,19 @@ resource "nutanix_virtual_machine" "vm1" {
 
   parent_reference = { 
     kind = "vm"
-    uuid = "4f3c9b17-7e4b-468f-acfe-e976ff87714d" # CentOS-7-x86_64-Minimal-2003.iso (7.8.2003)(Ax)
+    uuid = "e4740374-ab12-4ba3-bf77-f3d0b4c3918f" # Redhat(7.9)
   }
 
   nic_list {
-    subnet_uuid = "9f117534-309f-447f-bd4a-4143bbb2d560" # TAP_DEV_MGMT
+    subnet_uuid = "b4d9ea47-3b0a-4348-9f66-536ffacf60f4" # TAP_P_BE_DB_MGMT(2)
   }
 
   nic_list {
-    subnet_uuid = "410d1deb-3d33-4066-ad0f-76af1c186821" # TAP_DEV
+    subnet_uuid = "86da3c1c-9944-4048-82e7-6255f221e919" # TAP_P_BE_DB(53)
   }
 
   disk_list { # disk OS default
-    disk_size_mib = 204800
+    disk_size_mib = 512000
   }
 
   disk_list { # disk IDE CDROM
