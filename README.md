@@ -14,7 +14,7 @@ Steps
 	| export CLOUDINIT_TEMPLATE='conf/cloud-init.j2.yml'
 	| export TFVAR_PATH='conf/terraform.tfvars' # output path
 
-4. run cmd `python tfvars-generators.py` you will get `conf/terraform.tfvars` that can be used to provision the vms acc. to your requirement
+4. run cmd `python3 tfvars-generators.py` you will get `conf/terraform.tfvars` that can be used to provision the vms acc. to your requirement
 
 5. run terraform as ussual
 6. as you can see the data disk is not comming up as the 1st run
